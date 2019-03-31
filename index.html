@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  <title>Nyan Cat</title>
+
+</head>
+
+<body>
+  <button id="make_it_rain">Make it rain!</button>
+    <img id ="cat" src="img/cat.png">
+<div id="container">
+</div>
+  <audio id="myAudio"> 
+      <source src="audio/nyancat.ogg">
+      <source src="audio/nyancat.mp3">
+  </audio>
+
+<script>
+
+var btn = document.getElementById("make_it_rain"); 
+btn.addEventListener("click", rainCat);
+
+// Animation starts
+function rainCat()
+{ 
+
+  setTimeout(animationEnd,10000);
+
+  // Background properties 
+    var background = document.getElementById("container");
+        background.style.display = "block";
+        document.body.appendChild(background);
+    var pos_background = 0;
+    setInterval(frameBackground, 100);
+
+  // Background moves
+    function frameBackground()
+    {
+    if (pos_background == -100) {
+      pos_background = 0;
+    } else {
+      pos_background--;
+      background.style.top = pos_background + "%"; 
+      background.style.left = pos_background + "%"; 
+      }
+    }
+
+  // Cat properties
+    var nyanCat = document.getElementById("cat");
+        nyanCat.style.display = "block";
+        document.body.appendChild(nyanCat);
+    var pos_cat = 0;
+    setInterval(frameCat, 10);
+
+  // Cat moves
+    function frameCat()
+    {
+      if (pos_cat == 100) {
+        pos_cat = 0;
+      } else {
+        pos_cat++; 
+        nyanCat.style.top = pos_cat + "%"; 
+        nyanCat.style.left = pos_cat + "%"; 
+        }
+    }
+
+  // Music plays
+    document.getElementById('myAudio').play();
+    function playAudio() { audio.play(); }
+}
+
+  // Animation stops
+    function animationEnd() {
+      location.reload(); 
+    }
+
+</script>
+
+
+</body>

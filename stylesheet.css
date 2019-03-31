@@ -1,0 +1,35 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 1000%;
+  background-image: url('img/background.png');
+  background-repeat: repeat;
+  display: none;
+}
+
+#make_it_rain {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#cat {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  display: none;
+}
+
+
