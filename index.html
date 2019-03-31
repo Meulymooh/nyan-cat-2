@@ -54,18 +54,21 @@ function rainCat()
     var nyanCat = document.getElementById("cat");
         nyanCat.style.display = "block";
         document.body.appendChild(nyanCat);
-    var pos_cat = 0;
+    var pos_cat_left = 100;
+    var pos_cat_top = 0;
     setInterval(frameCat, 10);
 
   // Cat moves
     function frameCat()
     {
-      if (pos_cat == 100) {
-        pos_cat = 0;
+      if (pos_cat_left == 100) {
+        pos_cat_left = Math.floor(Math.random() * 100) ;
+        pos_cat_top = 0;
       } else {
-        pos_cat++; 
-        nyanCat.style.top = pos_cat + "%"; 
-        nyanCat.style.left = pos_cat + "%"; 
+        pos_cat_top++; 
+        pos_cat_left++;
+        nyanCat.style.top = pos_cat_top + "%"; 
+        nyanCat.style.left = pos_cat_left+ "%"; 
         }
     }
 
