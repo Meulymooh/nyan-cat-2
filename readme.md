@@ -6,12 +6,12 @@ Link: https://meulymooh.github.io/nyan-cat-2/index.html
 
 I have 1 cat raining from top left to bottom right with background moving and music playing.
 
-I haven't reached the "bonus" part of the exercise.
+I haven't completed all "bonus" part of the exercise (only random position).
 
 ## Difficulties
 
-First try: I used keyframes to animate the cat.
-Second try: I used javascript.
+First try: I used keyframes to animate the cat but was block before the bonus part.
+Second try: I used javascrip to animate the cat.
 
 I was pretty slow about finding out about all the steps, knowing how to start, where to look at, etc... I would have appreciated an exercise divided into smaller steps with slightly more "guidance".
 
