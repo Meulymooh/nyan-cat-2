@@ -4,14 +4,18 @@ Link: https://meulymooh.github.io/nyan-cat-2/index.html
 
 ## Achievements
 
-I have 1 cat raining from top left to bottom right with background moving and music playing.
+I have multiple cats raining from top left to bottom right with background moving and music playing.
 
-I haven't completed all "bonus" part of the exercise (only random position).
+I haven't completed all "bonus" instructions of the exercise.
 
 ## Difficulties
 
 First try: I used keyframes to animate the cat but was block before the bonus part.
 Second try: I used javascrip to animate the cat.
+
+I haven't used a very short method, though. There's probably a simpler way to do it.
+
+## Feedback about the exercise
 
 I was pretty slow about finding out about all the steps, knowing how to start, where to look at, etc... I would have appreciated an exercise divided into smaller steps with slightly more "guidance".
 
