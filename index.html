@@ -50,25 +50,33 @@ function rainCat()
       }
     }
 
-  // Cat properties
+  // Cat styling
     var nyanCat = document.getElementById("cat");
         nyanCat.style.display = "block";
+        nyanCat.style.transform = "rotate(45deg)";
         document.body.appendChild(nyanCat);
+
+  // Cat variables
     var pos_cat_left = 100;
     var pos_cat_top = 0;
+    var rotate = Math.floor(Math.random() * 360);
     setInterval(frameCat, 5);
+
+ 
 
   // Cat moves
     function frameCat()
     {
       if (pos_cat_left == 100) {
-        pos_cat_left = Math.floor(Math.random() * 100) ;
+        pos_cat_left = Math.floor(Math.random() * 50);
         pos_cat_top = 0;
+        rotateCat = Math.floor(Math.random() * 360);
       } else {
         pos_cat_top = pos_cat_top + 0.5; 
-        pos_cat_left += 0.5;
+        pos_cat_left = pos_cat_left + 0.5;
         nyanCat.style.top = pos_cat_top + "%"; 
-        nyanCat.style.left = pos_cat_left+ "%"; 
+        nyanCat.style.left = pos_cat_left + "%"; 
+        nyanCat.style.transform = 'rotate(' + rotate + 'deg)';
         }
     }
 
