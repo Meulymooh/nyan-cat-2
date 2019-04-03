@@ -1,11 +1,14 @@
 
+// Button
 var btn = document.getElementById("make_it_rain"); 
 btn.addEventListener("click", rainCat);
-  var catImages = [];
-  var catLeftPositions = [];
-  var catTopPositions = [];
-  var catRotations = [];
-  var nbCats;
+
+// Arrays for cat images, number of cats, position, rotation
+var catImages = [];
+var catLeftPositions = [];
+var catTopPositions = [];
+var catRotations = [];
+var nbCats;
 
 // Animation starts
 function rainCat()
@@ -31,7 +34,7 @@ function rainCat()
       }
     }
 
-  // Create array
+ // Create bunch of cats
 function manyCats() {
   nbCats = Math.floor(Math.random() * 20);
   for (i = 0; i < nbCats; i ++)
@@ -40,8 +43,6 @@ function manyCats() {
   }
   setInterval(frameCat, 5);
 }
-
-
 
   // Create one cat
   function oneCat()
@@ -60,7 +61,7 @@ function manyCats() {
     catRotations.push(0);
   }
 
-  // Cat moves
+  // Cats moves
     function frameCat()
     { 
       for (i = 0; i < nbCats; i ++)
@@ -83,7 +84,7 @@ function manyCats() {
       }
     }
 
-  // create cat images
+  // Call cat images
   manyCats();
 
   // Music plays
